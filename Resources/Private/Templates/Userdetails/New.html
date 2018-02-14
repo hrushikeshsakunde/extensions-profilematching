@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+  <f:flashMessages />
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+          Please Fill Out The Questionnaires For Best Match </div>
+        <div class="panel-body">
+
+          <f:render partial="FormErrors" arguments="{object:Userdetails}" />
+
+          <f:form action="create"  name="newUserdetails" object="{newUserdetails}">
+            <f:render partial="Userdetails/FormFields" />
+
+            <f:form.submit class="btn btn-default" id="btnCreateQuestionnaires" value="Submit" />
+          </f:form>
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+
+  </div>
+
+</f:section>
+
+
+
+</html>

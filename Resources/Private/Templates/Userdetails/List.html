@@ -1,0 +1,54 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for Userdetails</h1>
+
+<f:flashMessages />
+
+<table  class="tx_profilematching" >
+	<tr>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.userid" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.title" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.fullname" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.email" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.gender" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.major" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.language" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.activity" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userdetails.visitedplaces" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{userdetailss}" as="userdetails">
+		<tr>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.userid}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.title}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.fullname}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.email}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.gender}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.major}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.language}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.activity}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userdetails : userdetails}"> {userdetails.visitedplaces}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{userdetails : userdetails}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{userdetails : userdetails}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Userdetails</f:link.action>
+</f:section>
+</html>

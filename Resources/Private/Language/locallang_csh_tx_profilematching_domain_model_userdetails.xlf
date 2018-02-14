@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-20T22:21:17Z" product-name="profilematching">
+		<header/>
+		<body>
+			<trans-unit id="userid.description">
+				<source>userid</source>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="fullname.description">
+				<source>fullname</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="gender.description">
+				<source>gender</source>
+			</trans-unit>
+			<trans-unit id="major.description">
+				<source>Area of Study</source>
+			</trans-unit>
+			<trans-unit id="language.description">
+				<source>language</source>
+			</trans-unit>
+			<trans-unit id="activity.description">
+				<source>activity</source>
+			</trans-unit>
+			<trans-unit id="visitedplaces.description">
+				<source>visitedplaces</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

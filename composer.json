@@ -1,0 +1,19 @@
+{
+    "name": "buddysystem/profilematching",
+    "type": "typo3-cms-extension",
+    "description": "Matching users profile based on user's interest.",
+    "authors": [
+        {
+            "name": "Hrushikesh Sakunde",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BuddySystem\\Profilematching\\": "Classes"
+        }
+    }
+}

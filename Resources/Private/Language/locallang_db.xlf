@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-20T22:21:17Z" product-name="profilematching">
+		<header/>
+		<body>
+			<trans-unit id="tx_profilematching_domain_model_userdetails">
+				<source>Userdetails</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.userid">
+				<source>Userid</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.fullname">
+				<source>Fullname</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.major">
+				<source>Area of Study</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.language">
+				<source>Known Languages</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.activity">
+				<source>Hobbies</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userdetails.visitedplaces">
+				<source>Places you like to Visite</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userlink">
+				<source>Userlink</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userlink.senderid">
+				<source>Senderid</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userlink.receiverid">
+				<source>Receiverid</source>
+			</trans-unit>
+			<trans-unit id="tx_profilematching_domain_model_userlink.status">
+				<source>Status</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

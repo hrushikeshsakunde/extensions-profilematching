@@ -1,0 +1,82 @@
+			<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+	<div class="row">
+
+		<div class="col-sm-10">
+
+
+			<f:flashMessages/>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+					Find Your Friends
+				</div>
+				<div class="panel-body">
+
+					<f:for each="{userdetailss}" as="userdetails">
+						<div class="row">
+
+							<div class="col-sm-11">
+								<div class="col-sm-12"><label><i class="glyphicon glyphicon-user"
+																 aria-hidden="true"></i>
+									Title :
+								</label><span> {userdetails.title}</span></div>
+								<div class="col-sm-4"><label><i class="glyphicon glyphicon-text-width" aria-hidden="true"></i>
+									Full Name :
+								</label><span> {userdetails.fullname}</span></div>
+								<div class="col-sm-4"><label><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+									Email :
+								</label><span> {userdetails.email}</span></div>
+								<div class="col-sm-4"><label><i class="glyphicon glyphicon-ok" aria-hidden="true"></i>
+									Gender :
+								</label><span> {userdetails.gender}</span></div>
+								<div class="col-sm-4"><label><i class="glyphicon glyphicon-education" aria-hidden="true"></i>
+									Area of Study :
+								</label><span> {userdetails.major}</span></div>
+								<div class="col-sm-4"><label><i class="glyphicon glyphicon-text-color" aria-hidden="true"></i>
+									Known Language :
+								</label><span> {userdetails.language}</span></div>
+								<div class="col-sm-4"><label><i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
+									Hobbies :
+								</label><span>  {userdetails.activity}</span></div>
+								<div class="col-sm-10"><label><i class="glyphicon glyphicon-picture" aria-hidden="true"></i>
+									Places You like to Visit :
+								</label><span> {userdetails.visitedplaces}</span>
+								</div>
+
+							</div>
+							<div class="col-sm-2" style="padding-top: 60px;">
+								<f:link.action action="accept" class="btn btn-default" arguments="{userdetails : userdetails}">Accept</f:link.action>
+
+							</div>
+						</div>
+						<hr class="hr-success" />
+					</f:for>
+
+
+
+
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+</f:section>
+</html>

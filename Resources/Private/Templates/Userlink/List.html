@@ -1,0 +1,42 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for Userlink</h1>
+
+<f:flashMessages />
+
+<table  class="tx_profilematching" >
+	<tr>
+		<th><f:translate key="tx_profilematching_domain_model_userlink.senderid" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userlink.receiverid" /></th>
+		<th><f:translate key="tx_profilematching_domain_model_userlink.status" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{userlinks}" as="userlink">
+		<tr>
+			<td><f:link.action action="show" arguments="{userlink : userlink}"> {userlink.senderid}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userlink : userlink}"> {userlink.receiverid}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{userlink : userlink}"> {userlink.status}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{userlink : userlink}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{userlink : userlink}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Userlink</f:link.action>
+</f:section>
+</html>

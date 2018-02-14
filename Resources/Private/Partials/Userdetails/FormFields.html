@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:form.textfield property="userid"  type = "hidden" />
+<f:form.textfield property="title" type = "hidden" />
+<f:form.textfield property="fullname" type = "hidden"/>
+<f:form.textfield property="email"   type = "hidden"/>
+<f:form.textfield property="gender"  type = "hidden" />
+
+<label for="major">
+	<span class="required">* </span> <f:translate key="tx_profilematching_domain_model_userdetails.major" />
+</label>
+<br />
+<f:form.textfield property="major" class="form-control" id="inputLinkMajor" />
+<br />
+
+<label for="language">
+	<span class="required">* </span> <f:translate key="tx_profilematching_domain_model_userdetails.language" />
+</label><br />
+<f:form.textfield property="language" class="form-control" id="inputLinkLanguage"/>
+<br />
+
+<label for="activity">
+	<span class="required">* </span> <f:translate key="tx_profilematching_domain_model_userdetails.activity" />
+</label><br />
+<f:form.textfield property="activity" class="form-control" id="inputLinkActivity"/>
+<br />
+
+<label for="visitedplaces">
+	<span class="required">* </span> <f:translate key="tx_profilematching_domain_model_userdetails.visitedplaces" />
+	&nbsp;
+</label><br />
+&nbsp;<f:form.textfield property="visitedplaces" class="form-control" id="inputLinkVisited"/>
+<br />
+</html>
